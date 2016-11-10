@@ -11,6 +11,6 @@ Vagrant.configure("2") do |config|
 
   config.vbguest.auto_update = false
 
-  config.vm.provision "file", source: VAGRANT_ROOT + "\\provision\\files\\git-config", destination: "~/.config"
+  config.vm.provision "file", source: VAGRANT_ROOT + "\\provision\\files\\git-config", destination: "~/.gitconfig"
   config.vm.provision "shell", path: "https://raw.githubusercontent.com/lfallo1/vagrant-lamp/master/scripts/centos-lamp.sh"
 end
